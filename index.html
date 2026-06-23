@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ladva Enterprises — Strategic Consulting</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2444'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' font-weight='900' fill='%23e8b84b' text-anchor='middle' letter-spacing='-1'%3ELE%3C/text%3E%3C/svg%3E"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Cursor Glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-icon">
+      <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:900;font-size:13px;color:#e8b84b;letter-spacing:-0.5px;">LE</span>
+    </div>
+    Ladva Enterprises
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about"        data-section="about">About</a></li>
+    <li><a href="#services"     data-section="services">Services</a></li>
+    <li><a href="#industries"   data-section="industries">Industries</a></li>
+    <li><a href="#team"         data-section="team">Team</a></li>
+    <li><a href="#testimonials" data-section="testimonials">Clients</a></li>
+    <li><a href="#blog"         data-section="blog">Insights</a></li>
+    <li><a href="#contact" class="nav-cta" data-section="contact">Get in Touch</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="#about"        class="mobile-nav-link">About</a>
+  <a href="#services"     class="mobile-nav-link">Services</a>
+  <a href="#industries"   class="mobile-nav-link">Industries</a>
+  <a href="#team"         class="mobile-nav-link">Team</a>
+  <a href="#testimonials" class="mobile-nav-link">Clients</a>
+  <a href="#blog"         class="mobile-nav-link">Insights</a>
+  <a href="#faq"          class="mobile-nav-link">FAQ</a>
+  <div class="mobile-divider"></div>
+  <a href="#contact" class="mobile-nav-link mobile-cta-btn">Get in Touch</a>
+</div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="hero-glow hero-glow-3"></div>
+  <div class="hero-inner">
+    <p class="hero-tagline">Make Your Life, Easy With Us</p>
+    <div class="hero-badge">
+      <span class="hero-badge-pill">Trusted</span>
+      Strategic Consulting Since 2018 ✦
+    </div>
+    <h1>Transform Your Business<br>with <em>Expert Consulting</em></h1>
+    <p class="hero-sub">Ladva Enterprises delivers world-class management, financial, and digital consulting — empowering organizations to grow with clarity and lasting confidence.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-navy">Book Free Consultation</a>
+      <a href="#services" class="btn-outline">Explore Services →</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><span>✅</span> Free Discovery Call</div>
+      <div class="hero-trust-item"><span>🔒</span> 100% Confidential</div>
+      <div class="hero-trust-item"><span>⚡</span> 4-Hour Response SLA</div>
+    </div>
+    <div style="margin-top:52px">
+      <div class="hero-dashboard reveal">
+        <div class="dash-topbar">
+          <div class="dash-dots">
+            <div class="dash-dot" style="background:#ff5f57"></div>
+            <div class="dash-dot" style="background:#febc2e"></div>
+            <div class="dash-dot" style="background:#28c840"></div>
+          </div>
+          <div class="dash-title-bar">Ladva Client Portal — Strategic Dashboard</div>
+        </div>
+        <div class="dash-body">
+          <div class="dash-sidebar">
+            <div class="dash-sidebar-hd"><div class="ds-icon">
+              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:10px;height:10px"><path d="M2 8L5 5L7 7L10 3" stroke="#e8b84b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>Ladva</div>
+            <div class="dsn active"><span class="dsn-ico">📊</span>Overview</div>
+            <div class="dsn"><span class="dsn-ico">📁</span>Projects</div>
+            <div class="dsn"><span class="dsn-ico">👥</span>Clients</div>
+            <div class="dsn"><span class="dsn-ico">📈</span>Analytics</div>
+            <div class="dsn"><span class="dsn-ico">💬</span>Reports</div>
+            <div class="dsn"><span class="dsn-ico">⚙️</span>Settings</div>
+          </div>
+          <div class="dash-main">
+            <div class="dash-stat-row">
+              <div class="dstat"><div class="dstat-lbl">Revenue Growth</div><div class="dstat-num">↑ 34%</div><div class="dstat-chg">▲ +8.2% vs last quarter</div></div>
+              <div class="dstat"><div class="dstat-lbl">Active Projects</div><div class="dstat-num">12</div><div class="dstat-chg">▲ 3 new this month</div></div>
+              <div class="dstat"><div class="dstat-lbl">Client ROI</div><div class="dstat-num">4.8×</div><div class="dstat-chg">▲ Avg. across portfolio</div></div>
+            </div>
+            <div class="dash-row2">
+              <div class="dcard">
+                <div class="dcard-title">Active Engagements</div>
+                <div class="dli"><div class="dli-dot" style="background:var(--navy)"></div><div class="dli-txt">Financial Restructuring</div><div class="dli-val">82%</div></div>
+                <div class="dbar"><div class="dbar-fill" style="width:82%"></div></div>
+                <div class="dli" style="margin-top:8px"><div class="dli-dot" style="background:var(--gold)"></div><div class="dli-txt">Digital Transformation</div><div class="dli-val">61%</div></div>
+                <div class="dbar"><div class="dbar-fill" style="width:61%;background:linear-gradient(90deg,var(--gold),var(--gold2))"></div></div>
+                <div class="dli" style="margin-top:8px"><div class="dli-dot" style="background:var(--green)"></div><div class="dli-txt">HR Strategy Rollout</div><div class="dli-val">95%</div></div>
+                <div class="dbar"><div class="dbar-fill" style="width:95%;background:linear-gradient(90deg,var(--green),#22c55e)"></div></div>
+              </div>
+              <div class="dcard">
+                <div class="dcard-title">Recent Milestones</div>
+                <div class="dli"><div class="dli-dot" style="background:var(--green)"></div><div class="dli-txt">Strategy Workshop Done</div><div class="dli-val" style="color:var(--green)">✓</div></div>
+                <div class="dli"><div class="dli-dot" style="background:var(--navy)"></div><div class="dli-txt">Q2 Board Report Filed</div><div class="dli-val" style="color:var(--green)">✓</div></div>
+                <div class="dli"><div class="dli-dot" style="background:var(--gold)"></div><div class="dli-txt">ERP Integration Review</div><div class="dli-val" style="color:var(--gold)">Review</div></div>
+                <div class="dli"><div class="dli-dot" style="background:#2563eb"></div><div class="dli-txt">Talent Assessment Ph.2</div><div class="dli-val" style="color:#2563eb">Active</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ MARQUEE ══════════════ -->
+<!-- ══════════════════════════ MARQUEE ══════════════════════════ -->
+<div class="marquee-wrap">
+  <p class="marquee-label">
+    Trusted by leading organizations across India &amp; beyond
+  </p>
+
+  <div class="marquee-track">
+
+    <!-- Kompress India -->
+    <div class="marquee-item">
+      <img 
+        src="https://logo.clearbit.com/kompressindia.com" 
+        alt="Kompress India Pvt Ltd"
+      />
+    </div>
+
+    <!-- Marvel Touch Aluminium -->
+    <div class="marquee-item">
+      <img 
+        src="https://logo.clearbit.com/marvelaluminium.com" 
+        alt="Marvel Touch Aluminium Pvt Ltd"
+      />
+    </div>
+
+    <!-- GR Polyglov -->
+    <div class="marquee-item">
+      <img 
+        src="https://logo.clearbit.com/polyglov.com" 
+        alt="GR Polyglov"
+      />
+    </div>
+
+    <!-- Urban Gourmet -->
+    <div class="marquee-item">
+      <img 
+        src="https://logo.clearbit.com/avnayurveda.com" 
+        alt="Urban Gourmet India Pvt Ltd"
+      />
+    </div>
+
+    <!-- Duplicate for Infinite Scroll -->
+    <div class="marquee-item">
+      <img 
+        src="https://logo.clearbit.com/kompressindia.com" 
+        alt="Kompress India Pvt Ltd"
+      />
+    </div>
+
+    <div class="marquee-item">
+      <img 
+        src="https://logo.clearbit.com/marvelaluminium.com" 
+        alt="Marvel Touch Aluminium Pvt Ltd"
+      />
+    </div>
+
+    <div class="marquee-item">
+      <img 
+        src="./assets/company/GR Polyglov.png" 
+        alt="GR Polyglov"
+      />
+    </div>
+
+    <div class="marquee-item">
+      <img 
+        src="https://logo.clearbit.com/avnayurveda.com" 
+        alt="Urban Gourmet India Pvt Ltd"
+      />
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════ STATS ══════════════ -->
+<section id="stats">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ By The Numbers</div>
+      <h2 class="section-title">Driving measurable impact<br>for <em>every client we serve</em></h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card reveal"><span class="stat-icon">📅</span><div class="stat-num">8<span style="font-size:26px">+</span></div><div class="stat-label">Years of strategic consulting excellence</div></div>
+      <div class="stat-card reveal"><span class="stat-icon">🤝</span><div class="stat-num">200<span style="font-size:26px">+</span></div><div class="stat-label">Clients served across all industries</div></div>
+      <div class="stat-card reveal"><span class="stat-icon">👨‍💼</span><div class="stat-num">50<span style="font-size:26px">+</span></div><div class="stat-label">Expert consultants across domains</div></div>
+      <div class="stat-card reveal"><span class="stat-icon">⭐</span><div class="stat-num">98<span style="font-size:26px">%</span></div><div class="stat-label">Client satisfaction rate maintained</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-img-box">
+          <svg class="about-svg-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="80" height="80" rx="16" stroke="rgba(201,146,42,0.25)" stroke-width="2"/>
+            <path d="M25 70L42 48L55 60L70 38L82 48" stroke="#e8b84b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="42" cy="48" r="4" fill="#e8b84b"/>
+            <circle cx="55" cy="60" r="4" fill="#e8b84b"/>
+            <circle cx="70" cy="38" r="4" fill="#e8b84b"/>
+            <circle cx="25" cy="70" r="4" fill="rgba(201,146,42,0.5)"/>
+            <circle cx="82" cy="48" r="4" fill="rgba(201,146,42,0.5)"/>
+            <path d="M50 18L56 28H44L50 18Z" fill="#e8b84b" opacity="0.6"/>
+            <rect x="35" y="76" width="30" height="4" rx="2" fill="rgba(201,146,42,0.3)"/>
+          </svg>
+          <div class="about-mono-sub">Est. 2008 · Mumbai, India</div>
+        </div>
+        <div class="about-float-badge">
+          <span class="about-float-num">15+</span>
+          <span class="about-float-lbl">Years of Excellence</span>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="section-eyebrow">✦ Who We Are</div>
+        <h2 class="section-title">Built on Trust.<br>Driven by <em>Results.</em></h2>
+        <p class="section-sub" style="margin-top:14px">Ladva Enterprises is a premier full-service consulting firm dedicated to helping businesses navigate complexity, accelerate growth, and achieve sustainable competitive advantage. We combine deep domain expertise with hands-on execution to deliver measurable, lasting impact across industries.</p>
+        <ul class="about-check-list">
+          <li><div class="check-ico">✓</div>A team of 50+ domain experts with cross-industry experience</li>
+          <li><div class="check-ico">✓</div>Proven track record across startups, SMEs, and large enterprises</li>
+          <li><div class="check-ico">✓</div>Data-driven strategies tailored to your unique business context</li>
+          <li><div class="check-ico">✓</div>Long-term partnerships built on transparency and accountability</li>
+          <li><div class="check-ico">✓</div>ISO-certified processes and global delivery capability</li>
+        </ul>
+        <div class="about-stats">
+          <div><div class="about-stat-num">200+</div><div class="about-stat-lbl">Clients Served</div></div>
+          <div><div class="about-stat-num">4.8×</div><div class="about-stat-lbl">Avg. Client ROI</div></div>
+          <div><div class="about-stat-num">50+</div><div class="about-stat-lbl">Consultants</div></div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+          <a href="#contact" class="btn-navy">Partner With Us →</a>
+          <a href="#features" class="btn-outline">Our Process</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SERVICES ══════════════ -->
+<section id="services">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ What We Offer</div>
+      <h2 class="section-title">Our Core <em>Consulting Services</em></h2>
+      <p class="section-sub center">Comprehensive solutions that drive performance, efficiency, and sustainable growth across every dimension of your business.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card reveal"><div class="svc-icon">🏛️</div><h3>Management Consulting</h3><p>Strategic advisory and organizational transformation to align leadership, structure, and culture with long-term objectives and market realities.</p><a href="#contact" class="svc-link">Learn More →</a></div>
+      <div class="svc-card reveal"><div class="svc-icon">📊</div><h3>Financial Advisory</h3><p>Comprehensive financial planning, risk management, and capital strategy to ensure resilience, profitability, and investor readiness.</p><a href="#contact" class="svc-link">Learn More →</a></div>
+      <div class="svc-card reveal"><div class="svc-icon">💻</div><h3>IT &amp; Digital Transformation</h3><p>End-to-end digital strategy, technology implementation, process automation, and data analytics modernization for competitive agility.</p><a href="#contact" class="svc-link">Learn More →</a></div>
+      <div class="svc-card reveal"><div class="svc-icon">👥</div><h3>HR &amp; Talent Strategy</h3><p>Build high-performance teams through talent acquisition frameworks, leadership development, culture building, and HR transformation.</p><a href="#contact" class="svc-link">Learn More →</a></div>
+      <div class="svc-card reveal"><div class="svc-icon">⚖️</div><h3>Legal &amp; Compliance</h3><p>Expert guidance on regulatory compliance, corporate governance, contract management, and enterprise risk mitigation.</p><a href="#contact" class="svc-link">Learn More →</a></div>
+      <div class="svc-card reveal"><div class="svc-icon">🚀</div><h3>Strategy &amp; Growth</h3><p>Market entry, competitive positioning, M&amp;A advisory, and growth roadmaps to help you scale precisely and sustainably.</p><a href="#contact" class="svc-link">Learn More →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ INDUSTRIES ══════════════ -->
+<section id="industries">
+  <div class="section-wrap industries-wrap">
+    <div class="section-header-center reveal">
+      <div class="ind-eyebrow">✦ Industries We Serve</div>
+      <h2 class="section-title" style="color:#fff">Deep Expertise Across<br><em>Key Sectors</em></h2>
+      <p class="section-sub center" style="color:rgba(255,255,255,.5)">We bring proven, sector-specific knowledge to every engagement — no generic playbooks, only context-rich strategies built for your industry.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="ind-card reveal"><span class="ind-icon">🏭</span><h4>Manufacturing &amp; Industrial</h4><p>Lean operations, supply chain optimization, capacity planning, and digital factory transformation for manufacturers.</p></div>
+      <div class="ind-card reveal"><span class="ind-icon">💰</span><h4>Banking &amp; Financial Services</h4><p>Regulatory compliance, risk frameworks, digital banking strategy, and product innovation for NBFCs and banks.</p></div>
+      <div class="ind-card reveal"><span class="ind-icon">💊</span><h4>Healthcare &amp; Pharma</h4><p>Clinical operations, go-to-market strategy, regulatory affairs, and digital health adoption for hospitals and pharma firms.</p></div>
+      <div class="ind-card reveal"><span class="ind-icon">🛍️</span><h4>Retail &amp; Consumer Goods</h4><p>Omnichannel strategy, inventory optimization, private label development, and customer experience transformation.</p></div>
+      <div class="ind-card reveal"><span class="ind-icon">🏗️</span><h4>Real Estate &amp; Infrastructure</h4><p>Project feasibility, financing strategy, regulatory navigation, and operational excellence for developers and builders.</p></div>
+      <div class="ind-card reveal"><span class="ind-icon">⚡</span><h4>Energy &amp; Sustainability</h4><p>Renewable energy strategy, ESG roadmaps, carbon footprint reduction, and clean energy transition planning.</p></div>
+      <div class="ind-card reveal"><span class="ind-icon">🎓</span><h4>Education &amp; EdTech</h4><p>Institutional growth strategy, curriculum innovation, digital learning platforms, and accreditation support.</p></div>
+      <div class="ind-card reveal"><span class="ind-icon">🚚</span><h4>Logistics &amp; Supply Chain</h4><p>Network design, 3PL strategy, last-mile optimization, and technology integration for logistics operators.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PROCESS ══════════════ -->
+<section id="process">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ How We Work</div>
+      <h2 class="section-title">Our Proven <em>4-Step Process</em></h2>
+      <p class="section-sub center">A structured, transparent methodology that takes you from problem to lasting impact — efficiently and collaboratively.</p>
+    </div>
+    <div class="process-grid" style="margin-top:52px">
+      <div class="process-step reveal"><div class="process-num">01</div><h4>Discovery</h4><p>We immerse in your business — auditing operations, financials, and culture through structured diagnostics to uncover real opportunities.</p></div>
+      <div class="process-step reveal"><div class="process-num">02</div><h4>Strategy Design</h4><p>Our experts craft a bespoke, data-backed strategy tailored to your unique context, using industry benchmarks and domain expertise.</p></div>
+      <div class="process-step reveal"><div class="process-num">03</div><h4>Execution</h4><p>We work alongside your teams during implementation — ensuring plans translate into results with full accountability and agility.</p></div>
+      <div class="process-step reveal"><div class="process-num">04</div><h4>Review &amp; Scale</h4><p>We track KPIs rigorously, provide transparent reporting, and continuously refine the approach to sustain and scale impact.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FEATURES ══════════════ -->
+<section id="features">
+  <div class="section-wrap">
+    <div class="features-wrap">
+      <div class="reveal-left">
+        <div class="fp-mock">
+          <div class="fp-head">
+            <div class="fp-dots-row"><div class="fp-dot" style="background:#ff5f57"></div><div class="fp-dot" style="background:#febc2e"></div><div class="fp-dot" style="background:#28c840"></div></div>
+            <div class="fp-head-title">Client Engagement Tracker</div>
+          </div>
+          <div class="fp-body">
+            <div class="fp-tabs"><div class="fp-tab active">Active</div><div class="fp-tab">Completed</div><div class="fp-tab">Pipeline</div></div>
+            <div class="fp-row"><div class="fp-av n">TG</div><div class="fp-info"><div class="fp-name">Tata Group — Financial Restructuring</div><div class="fp-detail">Arjun Mehta · Q3 2026 · Phase 3/4</div></div><div class="fp-badge active">Active</div></div>
+            <div class="fp-row"><div class="fp-av g">BP</div><div class="fp-info"><div class="fp-name">BrightPath Ventures — HR Scale-up</div><div class="fp-detail">Priya Shah · Q2 2026 · Phase 4/4</div></div><div class="fp-badge done">Done</div></div>
+            <div class="fp-row"><div class="fp-av gr">NS</div><div class="fp-info"><div class="fp-name">Nexus Solutions — Digital Transformation</div><div class="fp-detail">Rohan Desai · Q4 2026 · Phase 1/4</div></div><div class="fp-badge pending">In Progress</div></div>
+            <div class="fp-row"><div class="fp-av b">HI</div><div class="fp-info"><div class="fp-name">Horizon Industries — Growth Strategy</div><div class="fp-detail">Kavya Iyer · Q3 2026 · Review</div></div><div class="fp-badge review">In Review</div></div>
+            <div class="fp-row"><div class="fp-av p">SC</div><div class="fp-info"><div class="fp-name">SunCorp Ltd — Legal Compliance Audit</div><div class="fp-detail">Nikhil Rao · Q4 2026 · Phase 2/3</div></div><div class="fp-badge active">Active</div></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="reveal" style="margin-bottom:32px">
+          <div class="section-eyebrow">✦ Our Approach</div>
+          <h2 class="section-title">Transparent,<br>results-driven <em>execution</em></h2>
+          <p class="section-sub">We don't just advise — we embed with your team, execute with precision, and stay accountable to measurable outcomes from day one.</p>
+        </div>
+        <div class="features-list">
+          <div class="feat-item reveal"><div class="feat-icon">🔍</div><div class="feat-text"><h4>Deep Discovery Process</h4><p>Thorough diagnostics covering operations, financials, and culture to uncover real blockers and high-impact opportunities.</p></div></div>
+          <div class="feat-item reveal"><div class="feat-icon">🗺️</div><div class="feat-text"><h4>Bespoke Strategy Design</h4><p>No templates. Every strategy is custom-built, using data, benchmarks, and the collective expertise of our specialists.</p></div></div>
+          <div class="feat-item reveal"><div class="feat-icon">⚡</div><div class="feat-text"><h4>Hands-on Execution Support</h4><p>Our consultants stay through implementation — ensuring strategies translate into real, measurable business results.</p></div></div>
+          <div class="feat-item reveal"><div class="feat-icon">📈</div><div class="feat-text"><h4>Ongoing Performance Review</h4><p>Clear KPIs set upfront, tracked rigorously, with transparent reporting and continuous refinement for lasting impact.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CASE STUDIES ══════════════ -->
+<section id="case-studies">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ Case Studies</div>
+      <h2 class="section-title">Real Engagements,<br><em>Real Results</em></h2>
+      <p class="section-sub center">Click on any case study to explore the full story, approach, and outcomes in detail.</p>
+    </div>
+    <div class="case-grid">
+      <div class="case-card" onclick="openCaseModal(0)" tabindex="0" role="button">
+        <div class="case-header c1">
+          <div class="case-tag">Financial Advisory</div>
+          <div class="case-client">Horizon Industries Ltd.</div>
+          <div class="case-scope">Financial Restructuring &amp; Fundraising Strategy</div>
+        </div>
+        <div class="case-body">
+          <div class="case-result-row">
+            <div class="case-metric"><div class="case-metric-num">₹180Cr</div><div class="case-metric-lbl">Debt Restructured</div></div>
+            <div class="case-metric"><div class="case-metric-num">34%</div><div class="case-metric-lbl">Cost Reduction</div></div>
+            <div class="case-metric"><div class="case-metric-num">18mo</div><div class="case-metric-lbl">Turnaround Time</div></div>
+          </div>
+          <hr class="case-divider"/>
+          <p>Horizon was facing severe liquidity pressure. Ladva restructured their balance sheet and advised a successful Series B raise.</p>
+          <div class="case-view-btn">View Full Case Study →</div>
+        </div>
+      </div>
+      <div class="case-card" onclick="openCaseModal(1)" tabindex="0" role="button">
+        <div class="case-header c2">
+          <div class="case-tag">Digital Transformation</div>
+          <div class="case-client">BrightPath Ventures</div>
+          <div class="case-scope">Legacy ERP Migration &amp; Cloud Adoption</div>
+        </div>
+        <div class="case-body">
+          <div class="case-result-row">
+            <div class="case-metric"><div class="case-metric-num">4mo</div><div class="case-metric-lbl">Migration Time</div></div>
+            <div class="case-metric"><div class="case-metric-num">0</div><div class="case-metric-lbl">Downtime Hours</div></div>
+            <div class="case-metric"><div class="case-metric-num">62%</div><div class="case-metric-lbl">Efficiency Gain</div></div>
+          </div>
+          <hr class="case-divider"/>
+          <p>BrightPath's legacy ERP was slowing growth. Ladva led a full cloud migration in just 4 months with zero operational downtime.</p>
+          <div class="case-view-btn">View Full Case Study →</div>
+        </div>
+      </div>
+      <div class="case-card" onclick="openCaseModal(2)" tabindex="0" role="button">
+        <div class="case-header c3">
+          <div class="case-tag">HR Strategy</div>
+          <div class="case-client">Apex Manufacturing Ltd.</div>
+          <div class="case-scope">Talent Scale-up &amp; Culture Transformation</div>
+        </div>
+        <div class="case-body">
+          <div class="case-result-row">
+            <div class="case-metric"><div class="case-metric-num">50→200</div><div class="case-metric-lbl">Headcount Growth</div></div>
+            <div class="case-metric"><div class="case-metric-num">82%</div><div class="case-metric-lbl">Retention Rate</div></div>
+            <div class="case-metric"><div class="case-metric-num">12mo</div><div class="case-metric-lbl">Duration</div></div>
+          </div>
+          <hr class="case-divider"/>
+          <p>Apex needed to quadruple its workforce in 12 months without losing culture or quality — Ladva delivered.</p>
+          <div class="case-view-btn">View Full Case Study →</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="#contact" class="btn-outline">Discuss Your Project →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Case Study Modals -->
+<div class="case-modal-overlay" id="caseModalOverlay" onclick="closeCaseModal(event)">
+  <div class="case-modal" id="caseModal">
+    <div class="case-modal-header" id="caseModalHeader">
+      <button class="case-modal-close" onclick="closeCaseModalBtn()" aria-label="Close">✕</button>
+    </div>
+    <div class="case-modal-body" id="caseModalBody"></div>
+  </div>
+</div>
+
+<!-- ══════════════ TEAM ══════════════ -->
+<section id="team">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ Our People</div>
+      <h2 class="section-title">Meet the <em>Leadership Team</em></h2>
+      <p class="section-sub center">Seasoned professionals with decades of combined experience across consulting, finance, technology, and operations.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal"><div class="team-avatar a">ML</div><div class="team-name">Mitesh Ladva</div><div class="team-role">Founder &amp; Managing Partner</div><div class="team-bio">Visionary leader with 20+ years in strategic consulting. Drives the firm's mission of delivering lasting business impact across India.</div><div class="team-socials"><a href="#" class="team-social">in</a><a href="#" class="team-social">𝕏</a></div></div>
+      <div class="team-card reveal"><div class="team-avatar b">PS</div><div class="team-name">Priya Shah</div><div class="team-role">Head of Financial Advisory</div><div class="team-bio">15 years in investment banking and financial restructuring. CFA &amp; CA. Ex-KPMG Mumbai.</div><div class="team-socials"><a href="#" class="team-social">in</a><a href="#" class="team-social">𝕏</a></div></div>
+      <div class="team-card reveal"><div class="team-avatar c">AD</div><div class="team-name">Arjun Desai</div><div class="team-role">Director, Digital Transformation</div><div class="team-bio">Led digital overhauls at 40+ enterprises. MS Computer Science, IIT Bombay. Ex-Accenture.</div><div class="team-socials"><a href="#" class="team-social">in</a><a href="#" class="team-social">𝕏</a></div></div>
+      <div class="team-card reveal"><div class="team-avatar d">KI</div><div class="team-name">Kavya Iyer</div><div class="team-role">Head of HR &amp; Talent Strategy</div><div class="team-bio">Organizational psychologist and HR transformation expert. 12 years, former Deloitte HR Lead.</div><div class="team-socials"><a href="#" class="team-social">in</a><a href="#" class="team-social">𝕏</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ WHY CHOOSE US ══════════════ -->
+<section id="why-us">
+  <div class="section-wrap">
+    <div class="why-grid">
+      <div>
+        <div class="reveal" style="margin-bottom:32px">
+          <div class="section-eyebrow">✦ Why Ladva Enterprises</div>
+          <h2 class="section-title">What Sets Us<br>Apart from the <em>Rest</em></h2>
+          <p class="section-sub">We're not a traditional consulting firm. We're a results-first partner that stays accountable until outcomes are real and lasting.</p>
+        </div>
+        <div class="why-list">
+          <div class="why-item reveal"><div class="why-num">01</div><div class="why-text"><h4>No Templates, Ever</h4><p>Every strategy is built from scratch for your unique business context. We don't believe in one-size-fits-all advisory.</p></div></div>
+          <div class="why-item reveal"><div class="why-num">02</div><div class="why-text"><h4>We Stay Through Execution</h4><p>Unlike firms that hand you a report and leave, our consultants stay embedded until the strategy is fully implemented and delivering results.</p></div></div>
+          <div class="why-item reveal"><div class="why-num">03</div><div class="why-text"><h4>ROI-Measured Success</h4><p>We define success by your ROI, not our billable hours. Every engagement has upfront KPIs, tracked transparently throughout.</p></div></div>
+          <div class="why-item reveal"><div class="why-num">04</div><div class="why-text"><h4>Senior Talent, Not Junior Proxies</h4><p>You always work directly with experienced principals and domain experts — not junior analysts fresh out of college.</p></div></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="why-visual">
+          <div class="section-eyebrow" style="background:rgba(201,146,42,.15);border-color:rgba(201,146,42,.35);color:var(--gold2);margin-bottom:20px">✦ Our Track Record</div>
+          <h3>15 years of<br>sustained excellence</h3>
+          <p>From startups to listed enterprises — Ladva has consistently delivered industry-leading outcomes across every engagement we take on.</p>
+          <div class="why-stat-grid">
+            <div class="why-stat-box"><div class="why-stat-num">200+</div><div class="why-stat-lbl">Successful Engagements</div></div>
+            <div class="why-stat-box"><div class="why-stat-num">4.8×</div><div class="why-stat-lbl">Average Client ROI</div></div>
+            <div class="why-stat-box"><div class="why-stat-num">98%</div><div class="why-stat-lbl">Client Satisfaction</div></div>
+            <div class="why-stat-box"><div class="why-stat-num">₹2,400Cr+</div><div class="why-stat-lbl">Client Value Created</div></div>
+          </div>
+          <a href="#contact" class="btn-gold" style="margin-top:28px;display:inline-block">Start Your Engagement →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PRICING ══════════════ -->
+<section id="pricing">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ Engagement Models</div>
+      <h2 class="section-title">Flexible Pricing for<br>Every <em>Business Stage</em></h2>
+      <p class="section-sub center">All packages include a free discovery call and tailored scope. No hidden fees, ever.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="pricing-plan">Starter</div>
+        <div class="pricing-price">₹50K<span>/mo</span></div>
+        <div class="pricing-period">Ideal for SMEs and early-stage businesses</div>
+        <hr class="pricing-divider"/>
+        <ul class="pricing-list">
+          <li>1 consulting domain</li>
+          <li>Bi-weekly strategy calls</li>
+          <li>Monthly progress reports</li>
+          <li>Dedicated consultant</li>
+          <li class="off">Multi-domain coverage</li>
+          <li class="off">Executive board support</li>
+        </ul>
+        <a href="#contact" class="btn-plan ghost">Get Started</a>
+      </div>
+      <div class="pricing-card featured reveal">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-plan lgt">Growth</div>
+        <div class="pricing-price lgt">₹1.2L<span> /mo</span></div>
+        <div class="pricing-period lgt">Best for scaling mid-market companies</div>
+        <hr class="pricing-divider lgt"/>
+        <ul class="pricing-list">
+          <li class="lgt-li">Up to 3 consulting domains</li>
+          <li class="lgt-li">Weekly strategy &amp; review calls</li>
+          <li class="lgt-li">Real-time client dashboard</li>
+          <li class="lgt-li">Senior consultant team lead</li>
+          <li class="lgt-li">Quarterly board presentations</li>
+          <li class="lgt-li">Priority response &amp; support</li>
+        </ul>
+        <a href="#contact" class="btn-plan gold-btn">Start Engagement</a>
+      </div>
+      <div class="pricing-card reveal">
+        <div class="pricing-plan">Enterprise</div>
+        <div class="pricing-price" style="font-size:32px">Custom</div>
+        <div class="pricing-period">For large enterprises &amp; complex programs</div>
+        <hr class="pricing-divider"/>
+        <ul class="pricing-list">
+          <li>Unlimited consulting domains</li>
+          <li>Dedicated partner-led team</li>
+          <li>Full embedded engagement</li>
+          <li>Custom analytics &amp; reporting</li>
+          <li>C-suite &amp; board advisory</li>
+          <li>Global delivery capability</li>
+        </ul>
+        <a href="#contact" class="btn-plan dark">Talk to Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TESTIMONIALS ══════════════ -->
+<section id="testimonials">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ Client Stories</div>
+      <h2 class="section-title">Loved by the businesses<br>we've <em>transformed</em></h2>
+      <p class="section-sub center">Don't take our word for it — here's what our clients say about partnering with Ladva Enterprises.</p>
+    </div>
+
+    <div class="testi-swiper-wrap reveal">
+      <div class="swiper testi-swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Ladva transformed our financial operations. Their team uncovered inefficiencies we'd missed for years and delivered a clear, executable roadmap to profitability."</p>
+              <div class="testi-author"><div class="testi-av ta">RK</div><div><div class="testi-name">Rajesh Kumar</div><div class="testi-role">CFO, Horizon Industries</div></div></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Digital transformation was seamless. We moved from legacy systems to fully cloud-based in 4 months — zero downtime, outstanding support throughout."</p>
+              <div class="testi-author"><div class="testi-av tc">PS</div><div><div class="testi-name">Priya Sharma</div><div class="testi-role">CTO, Nexus Solutions Pvt. Ltd.</div></div></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Their HR strategy helped us scale from 50 to 200 employees in under a year without losing our culture. Genuinely invested in our success."</p>
+              <div class="testi-author"><div class="testi-av tb">AM</div><div><div class="testi-name">Anita Mehta</div><div class="testi-role">CEO, BrightPath Ventures</div></div></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"The management consulting team redefined our strategic planning. Board confidence is at an all-time high after Ladva's engagement with us."</p>
+              <div class="testi-author"><div class="testi-av td">VN</div><div><div class="testi-name">Vikram Nair</div><div class="testi-role">MD, Apex Manufacturing Ltd.</div></div></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Ladva's compliance advisory saved us from a costly regulatory issue. Their legal team is sharp, thorough, and always available when it matters."</p>
+              <div class="testi-author"><div class="testi-av te">SK</div><div><div class="testi-name">Sunita Krishnan</div><div class="testi-role">General Counsel, FutureCorp</div></div></div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testi-card">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"We doubled revenue in 18 months following Ladva's growth strategy recommendations. Their ROI tracking and accountability made all the difference."</p>
+              <div class="testi-author"><div class="testi-av tf">AR</div><div><div class="testi-name">Aryan Rao</div><div class="testi-role">Founder, ScaleUp India</div></div></div>
+            </div>
+          </div>
+
+        </div>
+        <br>
+        <!-- Pagination dots -->
+        <div class="swiper-pagination testi-pagination"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ AWARDS ══════════════ -->
+ <!--
+<section id="awards">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ Awards &amp; Recognition</div>
+      <h2 class="section-title">Recognized for<br><em>Excellence &amp; Impact</em></h2>
+      <p class="section-sub center">Our commitment to quality has earned us recognition from leading industry bodies and publications across India.</p>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card reveal"><span class="award-icon">🏆</span><div class="award-year">2025</div><div class="award-title">Best Management Consulting Firm — Western India</div><div class="award-body">Awarded by the Confederation of Indian Industry (CII) for excellence in strategic advisory.</div></div>
+      <div class="award-card reveal"><span class="award-icon">🥇</span><div class="award-year">2024</div><div class="award-title">Top 10 Consulting Firms — Economic Times</div><div class="award-body">Featured in ET's annual ranking of India's most impactful management consulting firms.</div></div>
+      <div class="award-card reveal"><span class="award-icon">⭐</span><div class="award-year">2024</div><div class="award-title">Excellence in Digital Transformation</div><div class="award-body">Recognized by NASSCOM for outstanding technology-led business transformation outcomes.</div></div>
+      <div class="award-card reveal"><span class="award-icon">🎖️</span><div class="award-year">2023</div><div class="award-title">India's Most Trusted Consulting Brand</div><div class="award-body">Awarded by TrustResearch Institute based on client satisfaction surveys across 500+ engagements.</div></div>
+    </div>
+  </div>
+</section>-->
+
+<!-- ══════════════ BLOG ══════════════ -->
+<section id="blog">
+  <div class="section-wrap">
+    <div class="section-header-center reveal">
+      <div class="section-eyebrow">✦ Insights &amp; Thought Leadership</div>
+      <h2 class="section-title">Latest from the <em>Ladva Blog</em></h2>
+      <p class="section-sub center">Expert perspectives on business strategy, finance, technology, and leadership — curated by our consultants.</p>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card reveal">
+        <div class="blog-img c1"><span>📈</span><div class="blog-tag">Strategy</div></div>
+        <div class="blog-body"><div class="blog-meta"><span class="blog-date">March 5, 2026</span><span class="blog-read">· 6 min read</span></div><h3>5 Growth Strategy Mistakes Indian SMEs Keep Making</h3><p>Why most mid-market companies plateau — and the strategic pivots that unlock the next stage of scale.</p><a href="#" class="blog-link">Read Article →</a></div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img c2"><span>💰</span><div class="blog-tag">Finance</div></div>
+        <div class="blog-body"><div class="blog-meta"><span class="blog-date">February 18, 2026</span><span class="blog-read">· 8 min read</span></div><h3>How to Prepare Your Business for Series A Fundraising</h3><p>A practical checklist from our financial advisory team — what investors actually look for before they sign.</p><a href="#" class="blog-link">Read Article →</a></div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-img c3"><span>🤖</span><div class="blog-tag">Digital</div></div>
+        <div class="blog-body"><div class="blog-meta"><span class="blog-date">February 1, 2026</span><span class="blog-read">· 5 min read</span></div><h3>AI Adoption in Indian Enterprises: Where to Start</h3><p>Our digital team's perspective on the most impactful first steps toward AI transformation for mid-market businesses.</p><a href="#" class="blog-link">Read Article →</a></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:40px"><a href="#" class="btn-outline">View All Insights →</a></div>
+  </div>
+</section>
+
+<!-- ══════════════ FAQ ══════════════ -->
+<section id="faq">
+  <div class="section-wrap">
+    <div class="section-header-center reveal" style="margin-bottom:52px">
+      <div class="section-eyebrow">✦ FAQs</div>
+      <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+      <p class="section-sub center">Everything you need to know about working with Ladva Enterprises.</p>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-question"><h4>How long does a typical consulting engagement last?</h4><div class="faq-chevron">+</div></div>
+          <div class="faq-answer"><p>Engagement lengths vary by scope. A focused strategy project typically runs 6–12 weeks. Ongoing retainer engagements run 3–12 months. Larger transformation programs can last 12–24 months. We define a clear timeline and milestones at the start of every engagement.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question"><h4>Do you work with startups or only large enterprises?</h4><div class="faq-chevron">+</div></div>
+          <div class="faq-answer"><p>We work with businesses of all sizes — from seed-stage startups to large listed enterprises. Our Starter package is specifically designed for SMEs and growing businesses that need focused advisory without the overhead of large consulting firms.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question"><h4>What industries does Ladva Enterprises specialize in?</h4><div class="faq-chevron">+</div></div>
+          <div class="faq-answer"><p>We have deep expertise across manufacturing, financial services, technology, healthcare, retail, real estate, and professional services. Our consultants bring industry-specific knowledge to every engagement, avoiding generic one-size-fits-all approaches.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question"><h4>Is the first consultation really free?</h4><div class="faq-chevron">+</div></div>
+          <div class="faq-answer"><p>Yes, absolutely. Every engagement begins with a complimentary 60-minute discovery call with a senior consultant. We use this session to understand your challenges, assess fit, and give you immediate, actionable insights — no commitment required.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question"><h4>How do you measure and report on results?</h4><div class="faq-chevron">+</div></div>
+          <div class="faq-answer"><p>We define clear, measurable KPIs at the start of every engagement. Clients on our Growth and Enterprise packages get access to our real-time client portal, with monthly performance reports and quarterly board-level presentations. We hold ourselves accountable to outcomes, not outputs.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question"><h4>What makes Ladva Enterprises different from other consulting firms?</h4><div class="faq-chevron">+</div></div>
+          <div class="faq-answer"><p>Three things set us apart: (1) We don't use templates — every strategy is built from scratch for your context. (2) We stay through execution, not just advisory. (3) We have a 98% client satisfaction rate and measure our success by your ROI, not our billable hours.</p></div>
+        </div>
+      </div>
+      <div class="faq-sidebar reveal-right">
+        <div class="faq-sidebar-img">
+          <div class="section-eyebrow" style="background:rgba(201,146,42,.2);border-color:rgba(201,146,42,.35);color:var(--gold2);margin-bottom:16px">✦ Still Have Questions?</div>
+          <h3>Talk to a Consultant Today</h3>
+          <p>Our team is available Monday–Saturday, 9am–7pm IST. Reach out and we'll respond within 4 hours.</p>
+          <div class="faq-contact-info">
+            <div class="faq-contact-row"><div class="faq-ci">📞</div><div><div class="faq-cd">Phone</div><div class="faq-cv">+91 95948 89811</div></div></div>
+            <div class="faq-contact-row"><div class="faq-ci">✉️</div><div><div class="faq-cd">Email</div><div class="faq-cv">ladventerprises@gmail.com</div></div></div>
+            <div class="faq-contact-row"><div class="faq-ci">📍</div><div><div class="faq-cd">Office</div><div class="faq-cv">Mumbai, Maharashtra, India</div></div></div>
+          </div>
+          <a href="#contact" class="btn-gold" style="margin-top:24px;display:inline-block;width:100%;text-align:center">Contact Us Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="contact-wrap">
+      <div class="reveal-left">
+        <div class="section-eyebrow">✦ Get In Touch</div>
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(26px,3.5vw,40px);font-weight:800;color:var(--navy);letter-spacing:-1px;line-height:1.15;margin-bottom:14px;">Let's Start a<br><em style="font-style:normal;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Conversation</em></h2>
+        <p style="font-size:15px;color:var(--muted2);line-height:1.72;margin-bottom:28px;">Your first consultation is completely free. Tell us about your challenges and we'll get back to you within 4 business hours.</p>
+        <div class="contact-details">
+          <div class="contact-detail-row"><div class="cd-icon">📞</div><div><div class="cd-text-label">Phone</div><div class="cd-text-val">+91 95948 89811</div></div></div>
+          <div class="contact-detail-row"><div class="cd-icon">✉️</div><div><div class="cd-text-label">Email</div><a href="mailto:ladventerprises@gmail.com" class="cd-text-val" style="color:var(--navy)">ladventerprises@gmail.com</a></div></div>
+          <div class="contact-detail-row"><div class="cd-icon">📍</div><div><div class="cd-text-label">Office</div><div class="cd-text-val">Level 12, One BKC, Bandra Kurla Complex<br>Mumbai, Maharashtra, India</div></div></div>
+          <div class="contact-detail-row"><div class="cd-icon">🕐</div><div><div class="cd-text-label">Office Hours</div><div class="cd-text-val">Mon – Sat, 9:00 AM – 7:00 PM IST</div></div></div>
+        </div>
+        <div class="contact-social">
+          <a href="#" class="cs-link">in</a>
+          <a href="#" class="cs-link">𝕏</a>
+          <a href="#" class="cs-link">f</a>
+          <a href="#" class="cs-link">▶</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal-right">
+        <h3>Send Us a Message</h3>
+        <p class="form-sub">Fill in the form and a senior consultant will reach out within 4 hours.</p>
+        <div id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>First Name <span>*</span></label><input type="text" id="firstName" class="form-control" placeholder="Rajesh"/><div class="form-error-msg" id="firstNameErr">Please enter your first name.</div></div>
+            <div class="form-group"><label>Last Name <span>*</span></label><input type="text" id="lastName" class="form-control" placeholder="Kumar"/><div class="form-error-msg" id="lastNameErr">Please enter your last name.</div></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Work Email <span>*</span></label><input type="email" id="email" class="form-control" placeholder="rajesh@company.com"/><div class="form-error-msg" id="emailErr">Please enter a valid email address.</div></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" id="phone" class="form-control" placeholder="+91 95948 89811"/></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Company Name <span>*</span></label><input type="text" id="company" class="form-control" placeholder="Horizon Industries"/><div class="form-error-msg" id="companyErr">Please enter your company name.</div></div>
+            <div class="form-group"><label>Company Size</label><select id="companySize" class="form-control form-select"><option value="">Select size</option><option>1–10 employees</option><option>11–50 employees</option><option>51–200 employees</option><option>201–1000 employees</option><option>1000+ employees</option></select></div>
+          </div>
+          <div class="form-group"><label>Service Interested In <span>*</span></label><select id="service" class="form-control form-select"><option value="">Select a service</option><option>Management Consulting</option><option>Financial Advisory</option><option>IT &amp; Digital Transformation</option><option>HR &amp; Talent Strategy</option><option>Legal &amp; Compliance</option><option>Strategy &amp; Growth</option><option>Multiple Services / Not Sure</option></select><div class="form-error-msg" id="serviceErr">Please select a service.</div></div>
+          <div class="form-group"><label>Tell Us About Your Challenge <span>*</span></label><textarea id="message" class="form-control" placeholder="Describe your business challenge or what you'd like to achieve. The more detail you provide, the better we can help you..."></textarea><div class="form-error-msg" id="messageErr">Please describe your challenge.</div></div>
+          <div class="form-check"><input type="checkbox" id="consent"/><label for="consent">I agree to Ladva Enterprises' <a href="#" onclick="openLegalModal('privacy')">Privacy Policy</a> and <a href="#" onclick="openLegalModal('terms')">Terms of Service</a>. I consent to being contacted about my inquiry.</label></div>
+          <!-- <button class="form-submit" id="formSubmitBtn">Send Message &amp; Book Free Consultation →</button> -->
+          <button class="form-submit" type="button" id="formSubmitBtn">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CTA BANNER ══════════════ -->
+<section style="background:var(--navy);padding:90px 24px;text-align:center;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:52px 52px;pointer-events:none;"></div>
+  <div style="position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(201,146,42,.14) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;"></div>
+  <div style="position:relative;z-index:1;max-width:640px;margin:0 auto;">
+    <div class="cta-eyebrow">✦ Let's Get Started</div>
+    <h2 class="reveal" style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(30px,4.5vw,52px);font-weight:800;letter-spacing:-1.5px;color:#fff;margin-bottom:14px;line-height:1.1;">Ready to Elevate<br>Your <em style="font-style:normal;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Business?</em></h2>
+    <p class="reveal" style="font-size:17px;color:rgba(255,255,255,.5);margin-bottom:36px;line-height:1.68;">Your first consultation is completely free — no strings attached, just strategic clarity tailored for your unique goals.</p>
+    <div class="reveal" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="#contact" class="btn-gold">Book Free Consultation</a>
+      <a href="tel:+919594889811" class="btn-ghost-wt">Call +91 95948 89811</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 14L6 10L9 13L13 7L16 9" stroke="#0f2444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 7L16 7L16 10" stroke="#0f2444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          Ladva Enterprises
+        </div>
+        <p>We partner with forward-thinking organizations to solve complex challenges and build sustainable, long-term growth. Your success is our mission.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-soc">in</a><a href="#" class="footer-soc">𝕏</a><a href="#" class="footer-soc">f</a><a href="#" class="footer-soc">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Management Consulting</a></li>
+          <li><a href="#services">Financial Advisory</a></li>
+          <li><a href="#services">IT &amp; Digital</a></li>
+          <li><a href="#services">HR &amp; Talent</a></li>
+          <li><a href="#services">Legal &amp; Compliance</a></li>
+          <li><a href="#services">Strategy &amp; Growth</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#blog">Blog &amp; Insights</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:ladventerprises@gmail.com">ladventerprises@gmail.com</a></li>
+          <li><a href="tel:+919594889811">+91 95948 89811</a></li>
+          <li><a href="#">Level 12, One BKC, Mumbai,<br style="display:none"> Maharashtra, India</a></li>
+          <li><a href="#">Mon–Sat 9AM–7PM IST</a></li>
+          <li><a href="#" onclick="openLegalModal('privacy');return false;">Privacy Policy</a></li>
+          <li><a href="#" onclick="openLegalModal('terms');return false;">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ladva Enterprises. All rights reserved.</span>
+      <span>Crafted with ❤️ for business excellence · Mumbai, Maharashtra, India</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Our Mission / Vision panel for footer bottom reference -->
+
+<!-- ══════════════ LEGAL MODALS ══════════════ -->
+<div class="legal-modal-overlay" id="privacyModal" onclick="closeLegalModal('privacy',event)">
+  <div class="legal-modal">
+    <div class="legal-modal-header">
+      <h2>Privacy Policy</h2>
+      <button class="legal-modal-close" onclick="closeLegalModalBtn('privacy')" aria-label="Close">✕</button>
+    </div>
+    <div class="legal-modal-body">
+      <span class="legal-effective">Effective Date: January 1, 2025 | Last Updated: March 1, 2026</span>
+      <p>Ladva Enterprises ("we", "our", "us"), registered and operating from <strong>Mumbai, Maharashtra, India</strong>, is committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website or engage our services.</p>
+      <h3>1. Information We Collect</h3>
+      <p>We may collect the following categories of personal information:</p>
+      <ul>
+        <li><strong>Identity Data:</strong> Full name, designation, company name.</li>
+        <li><strong>Contact Data:</strong> Email address, phone number, business address.</li>
+        <li><strong>Usage Data:</strong> IP address, browser type, pages visited, time spent on pages, referring URL.</li>
+        <li><strong>Communication Data:</strong> Enquiries, messages, and feedback you submit through our website contact form or via email.</li>
+        <li><strong>Transaction Data:</strong> Billing information and details related to services engaged.</li>
+      </ul>
+      <h3>2. How We Use Your Information</h3>
+      <p>We use your personal information for the following lawful purposes:</p>
+      <ul>
+        <li>To respond to your enquiries and provide the services you have requested.</li>
+        <li>To manage our business relationship with you, including billing and contract administration.</li>
+        <li>To send you relevant communications, newsletters, and marketing materials (with your consent).</li>
+        <li>To improve our website, services, and internal operations.</li>
+        <li>To comply with our legal and regulatory obligations under applicable Indian laws.</li>
+      </ul>
+      <h3>3. Legal Basis for Processing</h3>
+      <p>We process your personal data in accordance with the <strong>Information Technology Act, 2000</strong>, the <strong>Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</strong>, and any other applicable data protection legislation in India. Processing is carried out on the basis of: (a) your consent, (b) performance of a contract, or (c) our legitimate business interests.</p>
+      <h3>4. Data Sharing &amp; Disclosure</h3>
+      <p>We do not sell, rent, or trade your personal information. We may share your data with:</p>
+      <ul>
+        <li>Trusted third-party service providers who assist us in operating our website and delivering our services (bound by confidentiality obligations).</li>
+        <li>Professional advisors, auditors, or legal counsel where necessary.</li>
+        <li>Regulatory authorities or law enforcement agencies where required by applicable law.</li>
+      </ul>
+      <h3>5. Data Retention</h3>
+      <p>We retain your personal data only for as long as is necessary to fulfil the purposes outlined in this policy, or as required by applicable law. Client engagement data is typically retained for a minimum of 7 years following the conclusion of an engagement, in line with Indian accounting and legal record-keeping standards.</p>
+      <h3>6. Data Security</h3>
+      <p>We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, loss, alteration, or disclosure. Access to personal data is restricted to authorized personnel only.</p>
+      <h3>7. Your Rights</h3>
+      <p>You have the right to: access the personal data we hold about you; request correction of inaccurate data; withdraw consent at any time; request erasure of your data (subject to legal obligations); and lodge a complaint with the relevant authority. To exercise any of these rights, please contact us at <strong>ladventerprises@gmail.com</strong>.</p>
+      <h3>8. Cookies</h3>
+      <p>Our website may use cookies to enhance your browsing experience. You may disable cookies in your browser settings; however, this may affect the functionality of certain parts of the website.</p>
+      <h3>9. Changes to This Policy</h3>
+      <p>We reserve the right to update this Privacy Policy at any time. The updated version will be posted on our website with the revised effective date. We encourage you to review this page periodically.</p>
+      <h3>10. Contact Us</h3>
+      <p>For any privacy-related queries or concerns, please contact: <br/><strong>Ladva Enterprises</strong> | Level 12, One BKC, Bandra Kurla Complex, Mumbai, Maharashtra, India<br/>Email: ladventerprises@gmail.com | Phone: +91 95948 89811</p>
+    </div>
+  </div>
+</div>
+
+<div class="legal-modal-overlay" id="termsModal" onclick="closeLegalModal('terms',event)">
+  <div class="legal-modal">
+    <div class="legal-modal-header">
+      <h2>Terms of Service</h2>
+      <button class="legal-modal-close" onclick="closeLegalModalBtn('terms')" aria-label="Close">✕</button>
+    </div>
+    <div class="legal-modal-body">
+      <span class="legal-effective">Effective Date: January 1, 2025 | Last Updated: March 1, 2026</span>
+      <p>These Terms of Service ("Terms") govern your access to and use of the website and services provided by <strong>Ladva Enterprises</strong>, a consulting firm registered and operating from <strong>Mumbai, Maharashtra, India</strong>. By accessing our website or engaging our services, you agree to be bound by these Terms.</p>
+      <h3>1. Services</h3>
+      <p>Ladva Enterprises provides management consulting, financial advisory, IT and digital transformation, HR and talent strategy, legal and compliance advisory, and strategy and growth services. The specific scope, deliverables, timelines, and fees for each engagement are defined in a separate Statement of Work (SOW) or Service Agreement executed between Ladva Enterprises and the client.</p>
+      <h3>2. Eligibility</h3>
+      <p>By using our website or engaging our services, you represent that you are at least 18 years of age and have the authority to enter into a binding agreement on behalf of yourself or the organization you represent.</p>
+      <h3>3. Intellectual Property</h3>
+      <p>All content on this website — including text, graphics, logos, reports, methodologies, frameworks, and tools — is the intellectual property of Ladva Enterprises or its licensors and is protected under applicable Indian intellectual property laws. You may not reproduce, distribute, or create derivative works without our prior written consent.</p>
+      <h3>4. Confidentiality</h3>
+      <p>Both parties agree to keep confidential all non-public information disclosed during an engagement. Our consultants are bound by strict non-disclosure obligations. Clients are similarly expected to treat all proprietary methodologies, frameworks, and deliverables as confidential.</p>
+      <h3>5. Fees &amp; Payment</h3>
+      <p>Consulting fees are as agreed in the applicable Service Agreement. Invoices are payable within 15 days of issuance unless otherwise specified. Late payments may attract interest at the rate of 1.5% per month on the outstanding balance. All fees are exclusive of applicable GST and other statutory levies.</p>
+      <h3>6. Limitation of Liability</h3>
+      <p>To the maximum extent permitted by law, Ladva Enterprises shall not be liable for any indirect, incidental, special, or consequential damages arising out of or related to our services, including loss of profits, data, or business opportunities. Our total aggregate liability shall not exceed the total fees paid by you in the three months preceding the relevant claim.</p>
+      <h3>7. Disclaimer of Warranties</h3>
+      <p>Our services are provided on an "as is" and "as available" basis. While we strive to deliver outcomes aligned with agreed KPIs, we do not guarantee specific business results. Strategic advice is based on information available at the time of engagement; outcomes may vary due to market conditions, client actions, or external factors beyond our control.</p>
+      <h3>8. Indemnification</h3>
+      <p>You agree to indemnify and hold Ladva Enterprises and its partners, directors, employees, and agents harmless from any claims, losses, liabilities, and expenses (including legal fees) arising out of your breach of these Terms or your use of our services.</p>
+      <h3>9. Termination</h3>
+      <p>Either party may terminate an engagement by providing 30 days' written notice, unless otherwise specified in the applicable Service Agreement. Upon termination, all fees for work completed up to the termination date become immediately payable. Any deliverables produced prior to termination remain the property of Ladva Enterprises until full payment is received.</p>
+      <h3>10. Governing Law &amp; Dispute Resolution</h3>
+      <p>These Terms shall be governed by and construed in accordance with the laws of <strong>Maharashtra, India</strong>. Any disputes arising under or in connection with these Terms shall first be subject to good-faith negotiation. If unresolved within 30 days, disputes shall be referred to binding arbitration under the Arbitration and Conciliation Act, 1996, seated in <strong>Mumbai, Maharashtra, India</strong>. The courts of Mumbai shall have exclusive jurisdiction for any matters not subject to arbitration.</p>
+      <h3>11. Changes to These Terms</h3>
+      <p>Ladva Enterprises reserves the right to modify these Terms at any time. Material changes will be communicated via email or prominently displayed on our website. Continued use of our services following such notification constitutes acceptance of the revised Terms.</p>
+      <h3>12. Contact</h3>
+      <p>For any questions regarding these Terms, please contact:<br/><strong>Ladva Enterprises</strong> | Level 12, One BKC, Bandra Kurla Complex, Mumbai, Maharashtra, India<br/>Email: ladventerprises@gmail.com | Phone: +91 95948 89811</p>
+    </div>
+  </div>
+</div>
+
+<!-- Back To Top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<script>
+/* ═══════════════ CASE STUDY DATA ═══════════════ */
+var caseStudies = [
+  {
+    tag: 'Financial Advisory',
+    client: 'Horizon Industries Ltd.',
+    scope: 'Financial Restructuring &amp; Fundraising Strategy',
+    headerClass: 'c1',
+    metrics: [
+      { num: '₹180Cr', lbl: 'Debt Restructured' },
+      { num: '34%', lbl: 'Cost Reduction' },
+      { num: '18mo', lbl: 'Turnaround Time' }
+    ],
+    challenge: 'Horizon Industries was grappling with severe liquidity pressure following two years of declining revenue. With ₹180 Crore in outstanding debt, deteriorating lender relationships, and mounting operational costs, the company faced the real risk of insolvency. Board confidence was at an all-time low and management lacked a clear strategic path forward.',
+    approach: [
+      'Comprehensive balance sheet diagnostic and cash-flow stress testing across 4 business units.',
+      'Restructured ₹180Cr of debt through renegotiated repayment schedules and revised covenant packages with 3 lenders.',
+      'Identified and executed ₹60Cr in sustainable cost reductions across procurement, overheads, and workforce optimization.',
+      'Prepared Series B fundraising materials including investor decks, financial models, and due-diligence documentation.',
+      'Facilitated introductions with 12 strategic investors, resulting in a successful Series B close.'
+    ],
+    outcome: 'Within 18 months, Horizon Industries restored profitability, fully stabilized lender relationships, and successfully raised Series B funding. The company\'s credit rating improved by two notches and management reported a complete restoration of board and investor confidence.',
+    consultant: 'Priya Shah, Head of Financial Advisory'
+  },
+  {
+    tag: 'Digital Transformation',
+    client: 'BrightPath Ventures',
+    scope: 'Legacy ERP Migration &amp; Cloud Adoption',
+    headerClass: 'c2',
+    metrics: [
+      { num: '4mo', lbl: 'Migration Time' },
+      { num: '0', lbl: 'Downtime Hours' },
+      { num: '62%', lbl: 'Efficiency Gain' }
+    ],
+    challenge: 'BrightPath Ventures was running on a 12-year-old on-premise ERP system that had become a critical bottleneck to growth. Manual processes, siloed data, and near-zero real-time visibility into operations were costing the business an estimated ₹3Cr per year in inefficiency. Multiple failed previous migration attempts had left leadership wary of further disruption.',
+    approach: [
+      'Comprehensive legacy system audit mapping 140+ business processes across finance, procurement, HR, and operations.',
+      'Designed a phased, zero-downtime cloud migration plan using a parallel-run approach to eliminate business risk.',
+      'Selected and implemented a cloud-native ERP platform aligned with BrightPath\'s 5-year growth roadmap.',
+      'Built custom integration layers for 8 third-party tools including CRM, payroll, and logistics systems.',
+      'Delivered change management training for 200+ staff across 4 locations over 6 weeks.'
+    ],
+    outcome: 'The full migration was completed in just 4 months with zero operational downtime — a first in BrightPath\'s history. Process cycle times dropped by 62%, real-time reporting became available across all departments, and the business saved ₹3.5Cr annually in operational overhead within the first year.',
+    consultant: 'Arjun Desai, Director of Digital Transformation'
+  },
+  {
+    tag: 'HR Strategy',
+    client: 'Apex Manufacturing Ltd.',
+    scope: 'Talent Scale-up &amp; Culture Transformation',
+    headerClass: 'c3',
+    metrics: [
+      { num: '50→200', lbl: 'Headcount Growth' },
+      { num: '82%', lbl: '1-Year Retention' },
+      { num: '12mo', lbl: 'Duration' }
+    ],
+    challenge: 'Apex Manufacturing needed to quadruple its workforce from 50 to 200 employees within 12 months following a major contract win. The business had no formal HR function, no structured interview process, and no employer brand presence in the talent market. Leadership feared rapid growth would destroy the tight-knit culture that had driven early success.',
+    approach: [
+      'Built an end-to-end HR function from scratch including policies, processes, HRIS, and a dedicated HR team.',
+      'Designed a structured competency-based interview process with role-specific assessment frameworks for 18 job families.',
+      'Created a compelling employer brand — careers page, LinkedIn presence, and campus partnership program with 3 engineering colleges.',
+      'Implemented a 30-60-90 day structured onboarding program ensuring cultural immersion from day one.',
+      'Designed and delivered management training for all 12 team leads covering feedback, delegation, and performance culture.'
+    ],
+    outcome: 'Apex successfully scaled from 50 to 200 employees within 12 months, meeting all project staffing requirements on schedule. The 1-year retention rate of 82% exceeded the industry average of 67%. Apex was subsequently listed as one of "Best Workplaces in Manufacturing" by a leading industry body — a direct result of the culture work undertaken.',
+    consultant: 'Kavya Iyer, Head of HR &amp; Talent Strategy'
+  }
+];
+
+function openCaseModal(index) {
+  var cs = caseStudies[index];
+  var header = document.getElementById('caseModalHeader');
+  var body = document.getElementById('caseModalBody');
+
+  header.className = 'case-modal-header case-header ' + cs.headerClass;
+  header.innerHTML = '<button class="case-modal-close" onclick="closeCaseModalBtn()" aria-label="Close">✕</button>'
+    + '<div class="case-tag">' + cs.tag + '</div>'
+    + '<div class="case-client">' + cs.client + '</div>'
+    + '<div class="case-scope">' + cs.scope + '</div>';
+
+  var metricsHtml = cs.metrics.map(function(m) {
+    return '<div class="case-modal-metric"><div class="case-modal-metric-num">' + m.num + '</div><div class="case-modal-metric-lbl">' + m.lbl + '</div></div>';
+  }).join('');
+
+  var approachItems = cs.approach.map(function(a) { return '<li>' + a + '</li>'; }).join('');
+
+  body.innerHTML = '<div class="case-modal-metrics">' + metricsHtml + '</div>'
+    + '<div class="case-modal-section"><h4>The Challenge</h4><p>' + cs.challenge + '</p></div>'
+    + '<div class="case-modal-section"><h4>Our Approach</h4><ul>' + approachItems + '</ul></div>'
+    + '<div class="case-modal-section"><h4>The Outcome</h4><p>' + cs.outcome + '</p></div>'
+    + '<div class="case-modal-section" style="font-size:13px;color:var(--muted);margin-top:16px;padding-top:16px;border-top:1px solid var(--border)">Led by: <strong style="color:var(--navy)">' + cs.consultant + '</strong></div>'
+    + '<div class="case-modal-cta"><a href="#contact" class="btn-navy" onclick="closeCaseModalBtn()">Discuss a Similar Project →</a><a href="#contact" class="btn-outline" onclick="closeCaseModalBtn()">Book Free Consultation</a></div>';
+
+  document.getElementById('caseModalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  // Scroll modal to top
+  document.getElementById('caseModal').scrollTop = 0;
+}
+
+function closeCaseModal(e) {
+  if (e.target === document.getElementById('caseModalOverlay')) { closeCaseModalBtn(); }
+}
+function closeCaseModalBtn() {
+  document.getElementById('caseModalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* ═══════════════ LEGAL MODALS ═══════════════ */
+function openLegalModal(type) {
+  var id = type === 'privacy' ? 'privacyModal' : 'termsModal';
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLegalModal(type, e) {
+  var id = type === 'privacy' ? 'privacyModal' : 'termsModal';
+  if (e.target === document.getElementById(id)) { closeLegalModalBtn(type); }
+}
+function closeLegalModalBtn(type) {
+  var id = type === 'privacy' ? 'privacyModal' : 'termsModal';
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* ═══════════════ MOBILE MENU ═══════════════ */
+var hamburger   = document.getElementById('hamburger');
+var mobileMenu  = document.getElementById('mobileMenu');
+var mobileClose = document.getElementById('mobileClose');
+
+function openMobile() {
+  mobileMenu.classList.add('open'); hamburger.classList.add('open');
+  hamburger.setAttribute('aria-expanded','true'); document.body.classList.add('menu-open');
+}
+function closeMobile() {
+  mobileMenu.classList.remove('open'); hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded','false'); document.body.classList.remove('menu-open');
+}
+hamburger.addEventListener('click', function() { mobileMenu.classList.contains('open') ? closeMobile() : openMobile(); });
+mobileClose.addEventListener('click', closeMobile);
+document.querySelectorAll('.mobile-nav-link').forEach(function(l){ l.addEventListener('click', closeMobile); });
+mobileMenu.addEventListener('click', function(e){ if(e.target===mobileMenu) closeMobile(); });
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') {
+    closeMobile();
+    closeCaseModalBtn();
+    closeLegalModalBtn('privacy');
+    closeLegalModalBtn('terms');
+  }
+});
+
+/* ═══════════════ SCROLL REVEAL ═══════════════ */
+var revealEls = document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale');
+if ('IntersectionObserver' in window && revealEls.length) {
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e, i) {
+      if (e.isIntersecting) {
+        setTimeout(function() { e.target.classList.add('up'); }, i * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.07 });
+  revealEls.forEach(function(el) { io.observe(el); });
+} else {
+  revealEls.forEach(function(el) { el.classList.add('up'); });
+}
+
+/* ═══════════════ ACTIVE NAV ═══════════════ */
+var sections = ['hero','about','services','industries','process','features','case-studies','team','why-us','testimonials','awards','blog','faq','contact'];
+var navLinks = document.querySelectorAll('.nav-links a[data-section]');
+function updateActiveNav() {
+  var current = '';
+  sections.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    if (window.scrollY >= el.offsetTop - 140) current = id;
+  });
+  navLinks.forEach(function(link) {
+    link.classList.remove('active');
+    if (link.dataset.section === current) link.classList.add('active');
+  });
+}
+
+/* ═══════════════ SCROLL PROGRESS + BACK TO TOP + NAV SCROLLED ═══════════════ */
+var scrollProgress = document.getElementById('scrollProgress');
+var backToTop = document.getElementById('backToTop');
+var navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', function() {
+  var scrolled = window.scrollY;
+  var total = document.documentElement.scrollHeight - window.innerHeight;
+  scrollProgress.style.width = (scrolled / total * 100) + '%';
+  backToTop.classList.toggle('show', scrolled > 400);
+  navbar.classList.toggle('scrolled', scrolled > 40);
+  updateActiveNav();
+}, { passive: true });
+updateActiveNav();
+
+/* ═══════════════ FAQ ACCORDION — + / × ═══════════════ */
+document.querySelectorAll('.faq-question').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(function(i) {
+      i.classList.remove('open');
+      var ch = i.querySelector('.faq-chevron');
+      if (ch) ch.textContent = '+';
+    });
+    // Open clicked if was closed
+    if (!isOpen) {
+      item.classList.add('open');
+      var chevron = item.querySelector('.faq-chevron');
+      if (chevron) chevron.textContent = '×';
+    }
+  });
+});
+
+/* ═══════════════ CURSOR GLOW ═══════════════ */
+var cursorGlow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', function(e) {
+  cursorGlow.style.left = e.clientX + 'px';
+  cursorGlow.style.top  = e.clientY + 'px';
+}, { passive: true });
+
+/* ═══════════════ CONTACT FORM ═══════════════ */
+document.getElementById('formSubmitBtn').addEventListener('click', function(e) {
+  e.preventDefault();
+  var valid = true;
+  var fields = [
+    { id:'firstName', err:'firstNameErr', check: function(v){ return v.trim().length>0; } },
+    { id:'lastName',  err:'lastNameErr',  check: function(v){ return v.trim().length>0; } },
+    { id:'email',     err:'emailErr',     check: function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); } },
+    { id:'company',   err:'companyErr',   check: function(v){ return v.trim().length>0; } },
+    { id:'service',   err:'serviceErr',   check: function(v){ return v!==''; } },
+    { id:'message',   err:'messageErr',   check: function(v){ return v.trim().length>10; } }
+  ];
+  fields.forEach(function(f) {
+    var input = document.getElementById(f.id);
+    var err   = document.getElementById(f.err);
+    if (!input) return;
+    if (!f.check(input.value)) {
+      input.classList.add('error');
+      if (err) err.classList.add('show');
+      valid = false;
+    } else {
+      input.classList.remove('error');
+      if (err) err.classList.remove('show');
+    }
+  });
+  if (!document.getElementById('consent').checked) { alert('Please accept the privacy policy to proceed.'); return; }
+  if (!valid) return;
+  
+  var fn = document.getElementById('firstName').value.trim();
+  var ln = document.getElementById('lastName').value.trim();
+  var em = document.getElementById('email').value.trim();
+  var ph = document.getElementById('phone').value.trim();
+  var co = document.getElementById('company').value.trim();
+  var cs = document.getElementById('companySize').value;
+  var sv = document.getElementById('service').value;
+  var ms = document.getElementById('message').value.trim();
+  
+  // Send email via EmailJS
+  var templateParams = {
+    to_email: 'ladventerprises@gmail.com',
+    from_name: fn + ' ' + ln,
+    from_email: em,
+    phone: ph || 'Not provided',
+    company: co,
+    company_size: cs || 'Not specified',
+    service: sv,
+    message: ms
+  };
+  
+  emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    .then(function(response) {
+      alert('Your message has been sent successfully! We will get back to you soon.');
+      document.getElementById('contactForm').reset();
+    })
+    .catch(function(error) {
+      alert('Failed to send message. Please try again or contact us directly at ladventerprises@gmail.com');
+      console.log('EmailJS error:', error);
+    });
+});
+
+document.querySelectorAll('.form-control').forEach(function(input) {
+  input.addEventListener('input', function() {
+    input.classList.remove('error');
+    var errEl = document.getElementById(input.id + 'Err');
+    if (errEl) errEl.classList.remove('show');
+  });
+});
+
+/* ═══════════════ STAGGER STAT COUNTER ═══════════════ */
+function animateCounter(el, target, suffix, duration) {
+  var start = 0; var step = target / (duration / 16);
+  var timer = setInterval(function() {
+    start += step;
+    if (start >= target) { start = target; clearInterval(timer); }
+    el.textContent = Math.floor(start) + suffix;
+  }, 16);
+}
+var statObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      var nums = entry.target.querySelectorAll('.stat-num');
+      nums.forEach(function(n) {
+        var text = n.textContent;
+        var match = text.match(/(\d+)/);
+        if (!match) return;
+        var target = parseInt(match[1]);
+        var suffix = text.replace(match[0], '').replace(/\d/g,'');
+        var span = n.querySelector('span');
+        var spanHtml = span ? '<span style="font-size:26px">' + span.textContent + '</span>' : '';
+        n.innerHTML = '0' + spanHtml;
+        animateCounter(n, target, '', 1200);
+      });
+      statObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.stat-card').forEach(function(c) { statObserver.observe(c); });
+/* ═══════════════ TESTIMONIAL SLIDER ═══════════════ */
+(function() {
+  var slider = document.getElementById('testiSlider');
+  var dotsContainer = document.getElementById('testiDots');
+  var prevBtn = document.getElementById('testiPrev');
+  var nextBtn = document.getElementById('testiNext');
+  if (!slider) return;
+
+  var cards = slider.querySelectorAll('.testi-card');
+  var total = cards.length;
+  var currentIndex = 0;
+
+  // Build dots
+  for (var i = 0; i < total; i++) {
+    var dot = document.createElement('div');
+    dot.className = 'testi-dot' + (i === 0 ? ' active' : '');
+    (function(idx) { dot.addEventListener('click', function() { goTo(idx); }); })(i);
+    dotsContainer.appendChild(dot);
+  }
+
+  function getCardWidth() {
+    if (!cards[0]) return 360;
+    return cards[0].offsetWidth + 20; // card + gap
+  }
+
+  function updateDots() {
+    var dots = dotsContainer.querySelectorAll('.testi-dot');
+    dots.forEach(function(d, i) { d.classList.toggle('active', i === currentIndex); });
+  }
+
+  function goTo(idx) {
+    currentIndex = Math.max(0, Math.min(idx, total - 1));
+    slider.scrollTo({ left: getCardWidth() * currentIndex, behavior: 'smooth' });
+    updateDots();
+  }
+
+  prevBtn.addEventListener('click', function() { goTo(currentIndex - 1); });
+  nextBtn.addEventListener('click', function() { goTo(currentIndex + 1); });
+
+  // Sync dots on manual scroll
+  var scrollTimer;
+  slider.addEventListener('scroll', function() {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function() {
+      var idx = Math.round(slider.scrollLeft / getCardWidth());
+      currentIndex = Math.max(0, Math.min(idx, total - 1));
+      updateDots();
+    }, 80);
+  }, { passive: true });
+
+  // Drag to scroll (desktop)
+  var isDragging = false, startX, scrollStart;
+  slider.addEventListener('mousedown', function(e) {
+    isDragging = true; startX = e.pageX; scrollStart = slider.scrollLeft;
+    slider.style.userSelect = 'none';
+  });
+  document.addEventListener('mousemove', function(e) {
+    if (!isDragging) return;
+    slider.scrollLeft = scrollStart - (e.pageX - startX);
+  });
+  document.addEventListener('mouseup', function() {
+    if (!isDragging) return;
+    isDragging = false; slider.style.userSelect = '';
+  });
+
+  // Auto-play every 5s
+  var autoPlay = setInterval(function() {
+    goTo(currentIndex < total - 1 ? currentIndex + 1 : 0);
+  }, 5000);
+  slider.addEventListener('mouseenter', function() { clearInterval(autoPlay); });
+  slider.addEventListener('mouseleave', function() {
+    autoPlay = setInterval(function() {
+      goTo(currentIndex < total - 1 ? currentIndex + 1 : 0);
+    }, 5000);
+  });
+})();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
